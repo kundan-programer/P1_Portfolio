@@ -67,7 +67,7 @@ body {
 
 #item3 .about {
   font-size: 30px;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: cursive;
   margin-top: -35px;
 
 }
@@ -117,7 +117,8 @@ body {
 
 #item4 .skill {
   font-size: 20px;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: cursive;
+  font-weight: bold;
   margin-top: -20px;
 }
 
@@ -136,7 +137,9 @@ body {
 
 #item5 .project {
   font-size: 20px;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: cursive;
+  font-weight: bold;
+  font-weight: bold;
   margin-top: -20px;
 
 }
