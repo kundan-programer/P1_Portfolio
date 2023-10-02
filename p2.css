@@ -1,0 +1,287 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.conatainer {
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+    'item1 item1 item2 item2 item2 item2'
+    'item3 item3 item3 item3 item6 item6'
+    'item4 item4 item5 item5 item5 item5'
+    'item7 item7 item7 item7 item7 item7';
+}
+
+.item {
+  font-size: 15px;
+  padding: 50px;
+}
+
+/* sectoin of 1-------------------------------------------------- */
+#item1 {
+  grid-area: item1;
+  background-color: rgb(173, 170, 170);
+  padding: 20px;
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 20px;
+  text-align: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+
+/* sectoin of 2-------------------------------------------------- */
+#item2 {
+  grid-area: item2;
+  text-align: left;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgb(173, 170, 170);
+  padding: 10px;
+}
+
+#item2 ul li {
+  grid-area: ul;
+  display: inline;
+  padding: 20px;
+  position: relative;
+}
+
+
+/* sectoin of 3-------------------------------------------------- */
+#item3 {
+  grid-area: item3;
+}
+
+#item3 #About {
+  padding: 3px;
+  font-size: 20px;
+  font-family: cursive;
+  padding-top: 70px;
+}
+
+#item3 .about {
+  font-size: 30px;
+  font-family: 'Cedarville Cursive', cursive;
+  margin-top: -35px;
+
+}
+
+
+#About .resume {
+  padding-top: 30px;
+}
+
+#About .resume1 {
+  border-radius: 5px;
+}
+
+#About .resume1:hover {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#About span {
+  font-weight: bold;
+  color: blue;
+}
+
+/* section of 6-------------------------------------------------- */
+#item6 {
+  grid-area: item6;
+}
+
+#item6 img {
+  height: 250px;
+  width: 220px;
+  border-top-left-radius: 20px;
+  justify-content: center;
+  border: 2px solid;
+  border-color: blue;
+  box-shadow: 4px 4px 10px 3px blue;
+}
+
+
+/* sectoin of 4-------------------------------------------------- */
+#item4 {
+  margin-top: 2px;
+  grid-area: item4;
+  background-color: rgb(223, 223, 255);
+  font-size: 20px;
+}
+
+#item4 .skill {
+  font-size: 20px;
+  font-family: 'Cedarville Cursive', cursive;
+  margin-top: -20px;
+}
+
+#item4 ul {
+  text-align: left;
+}
+
+/* sectoin of 5-------------------------------------------------- */
+#item5 {
+  margin-top: 2px;
+  grid-area: item5;
+  background-color: rgb(223, 223, 255);
+  font-size: 20px;
+
+}
+
+#item5 .project {
+  font-size: 20px;
+  font-family: 'Cedarville Cursive', cursive;
+  margin-top: -20px;
+
+}
+
+.mid {
+  width: 430px;
+  text-align: left;
+  padding-left: 255px;
+}
+
+#item5 .mid {
+  font-size: 20px;
+  padding-top: 20px;
+
+}
+
+
+
+
+/* section of 7-------------------------------------------------- */
+#item7 {
+  grid-area: item7;
+  background-color: rgb(214, 139, 139);
+  padding: 20px;
+  margin-top: 5px;
+}
+
+#item7 .online {
+  padding-right: 10px;
+  color: white;
+  font-size: 20px;
+
+}
+
+#item7 .online a {
+  padding-right: 10px;
+  color: rgb(13, 13, 13);
+
+}
+
+#item7 .online a:hover {
+  color: rgb(3, 75, 255);
+}
+
+#item7 span {
+  padding-right: 10px;
+}
+
+
+/* navbar -------------------------------------------------*/
+.navigation img {
+  height: 25px;
+  width: 25px;
+  background: none;
+  display: none;
+}
+
+/* media quaries ----------------------------------------- */
+@media (max-width:721px) {
+  .conatainer #item1 {
+    text-align: center;
+  }
+
+  #item3 #About {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width:815px) {
+  #item2 ul li {
+    display: block;
+    font-size: 15px;
+    padding: 2px;
+    text-align: left;
+  }
+
+  #item3 #About {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width:721px) {
+  .navigation img {
+    display: block;
+    font-size: 15px;
+    padding: 2px;
+    padding-left: 0%;
+    text-align: left;
+  }
+
+  #item3 #About {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width:1300px) {
+  #item3 #About {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width:725px) {
+  .conatainer {
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+      'item1 item1 item2 item2 item2 item2'
+      'item6 item6 item6 item6 item6 item6'
+      'item3 item3 item3 item3 item3 item3'
+      'item4 item4 item5 item5 item5 item5'
+      'item7 item7 item7 item7 item7 item7';
+  }
+
+  #item3 #About {
+    padding-top: 10px;
+  }
+
+  #item1 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width:400px) {
+  .conatainer {
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+      'item1 item1 item2 item2 item2 item2'
+      'item6 item6 item6 item6 item6 item6'
+      'item3 item3 item3 item3 item3 item3'
+      'item4 item4 item4 item4 item4 item4'
+      'item5 item5 item5 item5 item5 item5'
+      'item7 item7 item7 item7 item7 item7';
+  }
+
+  #item3 #About {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  .mid {
+    width: 390px;
+    text-align: left;
+    padding-left: 0px;
+  }
+}
